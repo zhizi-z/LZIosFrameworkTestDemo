@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TestDemoManager.h"
 
 @interface TestDemo : NSObject
 

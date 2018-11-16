@@ -1,21 +1,16 @@
 //
-//  BaseTypeDemo.m
+//  TestDemo+BaseTypeTest.m
 //  IOSFrameworkTestDemo
 //
-//  Created by zlh on 2018/11/8.
+//  Created by zlh on 2018/11/13.
 //  Copyright © 2018 zlh. All rights reserved.
 //
 
-#import "BaseTypeDemo.h"
+#import "TestDemo+BaseTypeTest.h"
 
-@implementation BaseTypeDemo
+@implementation TestDemo (BaseTypeTest)
 
-+ (void)load
-{
-    registerTestDemo([self class]);
-    NSLog(@"registerTestDemo %p, %p", self, [self class]);
-}
-
+#pragma mark - NSDecimal -
 + (void)testDecimalCopy
 {
     NSDecimal target;
@@ -193,5 +188,25 @@
     
     NSComparisonResult result = NSDecimalCompare(&first, &second);
     NSLog(@"decimal compare: %ld", (long)result);
+}
+
+#pragma mark - NSDecimalNumber -
++ (void)testDecimalNumberByAdding
+{
+    NSDecimalNumber *first = [NSDecimalNumber decimalNumberWithString:@"12.34e2"];
+    NSDecimalNumber *second = [NSDecimalNumber decimalNumberWithString:@"12.345e2"];
+    first = [first decimalNumberByAdding:second];
+    NSLog(@"decimalNumber byAdding: %@", first);
+}
+
++ (void)testDecimalNumberObjCType
+{
+    NSDecimalNumber *first = [NSDecimalNumber decimalNumberWithString:@"12.34e2"];
+    NSLog(@"decimalNumber objCType: %s", first.objCType);
+}
+
++ (void)testDecimalNumberMaxmumDecimalNumber
+{
+    NSLog(@"decimalNumber maximumDecimalNumber: %@", NSDecimalNumber.maximumDecimalNumber);
 }
 @end

@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "TestDemoManager.h"
-#import "BaseTypeDemo.h"
 
 @interface AppDelegate ()
 
@@ -18,20 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [self testBaseType];
     TestDemoManager *testManager = [TestDemoManager defaultManager];
     [testManager execute];
     return YES;
 }
-
-- (void)testBaseType
-{
-    [BaseTypeDemo testDecimalCopy];
-    [BaseTypeDemo testDecimalString];
-    [BaseTypeDemo testDecimalCompact];
-    [BaseTypeDemo testDecimalAdd];
-}
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

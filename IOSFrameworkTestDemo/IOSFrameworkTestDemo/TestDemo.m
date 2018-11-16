@@ -8,8 +8,11 @@
 
 #import "TestDemo.h"
 
-
 @implementation TestDemo
 
-
++ (void)load
+{
+    registerTestDemo([self class]);
+    NSLog(@"registerTestDemo %p, %p", self, [self class]);
+}
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D513FA7E219A6DBB00E38576 /* TestDemo+BaseTypeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D513FA7D219A6DBB00E38576 /* TestDemo+BaseTypeTest.m */; };
 		D559D71721952E4600E826DD /* TestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D559D71621952E4600E826DD /* TestDemo.m */; };
 		D559D71A21952E8100E826DD /* TestDemoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D559D71921952E8100E826DD /* TestDemoManager.m */; };
 		D5FBB6782194216200166261 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FBB6772194216200166261 /* AppDelegate.m */; };
@@ -15,10 +16,11 @@
 		D5FBB6802194216200166261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FBB67F2194216200166261 /* Assets.xcassets */; };
 		D5FBB6832194216200166261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FBB6812194216200166261 /* LaunchScreen.storyboard */; };
 		D5FBB6862194216200166261 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FBB6852194216200166261 /* main.m */; };
-		D5FBB68F219421B400166261 /* BaseTypeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FBB68E219421B400166261 /* BaseTypeDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D513FA7C219A6DBB00E38576 /* TestDemo+BaseTypeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestDemo+BaseTypeTest.h"; sourceTree = "<group>"; };
+		D513FA7D219A6DBB00E38576 /* TestDemo+BaseTypeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestDemo+BaseTypeTest.m"; sourceTree = "<group>"; };
 		D559D71521952E4600E826DD /* TestDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDemo.h; sourceTree = "<group>"; };
 		D559D71621952E4600E826DD /* TestDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDemo.m; sourceTree = "<group>"; };
 		D559D71821952E8100E826DD /* TestDemoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDemoManager.h; sourceTree = "<group>"; };
@@ -33,8 +35,6 @@
 		D5FBB6822194216200166261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5FBB6842194216200166261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5FBB6852194216200166261 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D5FBB68D219421B400166261 /* BaseTypeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTypeDemo.h; sourceTree = "<group>"; };
-		D5FBB68E219421B400166261 /* BaseTypeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTypeDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 		D5FBB68C2194217400166261 /* FoundationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D5FBB68D219421B400166261 /* BaseTypeDemo.h */,
-				D5FBB68E219421B400166261 /* BaseTypeDemo.m */,
+				D513FA7C219A6DBB00E38576 /* TestDemo+BaseTypeTest.h */,
+				D513FA7D219A6DBB00E38576 /* TestDemo+BaseTypeTest.m */,
 			);
 			path = FoundationDemo;
 			sourceTree = "<group>";
@@ -166,11 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FBB67B2194216200166261 /* ViewController.m in Sources */,
+				D513FA7E219A6DBB00E38576 /* TestDemo+BaseTypeTest.m in Sources */,
 				D5FBB6862194216200166261 /* main.m in Sources */,
 				D559D71721952E4600E826DD /* TestDemo.m in Sources */,
 				D5FBB6782194216200166261 /* AppDelegate.m in Sources */,
 				D559D71A21952E8100E826DD /* TestDemoManager.m in Sources */,
-				D5FBB68F219421B400166261 /* BaseTypeDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
